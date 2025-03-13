@@ -9,7 +9,9 @@ username = str(input("Enter username: "))
 
 if len(username) > 12:
     print("Your username contains too many characters.")
+elif not username.find(" ") == -1:
+    print("Username mustn't contain spaces.")
 elif not username.isalpha():
-    print("Username mustn't contain digits and spaces.")
+    print("Username mustn't contain digits.")
 else:
     print("Account has been created.")
