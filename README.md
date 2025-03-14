@@ -1,4 +1,4 @@
 Python Coding Journey
 
 13.03.25
-https://youtu.be/ix9cRaBkVe0?t=6396
+https://youtu.be/ix9cRaBkVe0?t=8246
