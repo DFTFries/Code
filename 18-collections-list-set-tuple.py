@@ -1,6 +1,6 @@
 # collection = single "variable" used to store multiple values
 #   List  = [] ordered and changeable. Duplicates OK
-#   Set   = {} unordered and immutable, bit Add/Remove OK. NO duplicates // immutable = unveränderlich
+#   Set   = {} unordered and immutable, but Add/Remove OK. NO duplicates // immutable = unveränderlich
 #   Tuple = () ordered and unchangeable. Duplicates OK. FASTER
 
 # fruits = ["apple", "orange", "banana", "coconut"]  # list []
