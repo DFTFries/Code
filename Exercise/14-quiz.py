@@ -52,7 +52,7 @@ print("-----------------")
 #         question_num += 1
 #         print("-----------------")
 
-print("ansers: ", end=" ")
+print("answers: ", end=" ")
 for answer in answers:
     print(answer, end=" ")
 print()
