@@ -49,9 +49,9 @@ for die in range(num_of_dice):
 #         print(line)
 
 # horizontal dice
-for line in range(5):
+for row in range(5):
     for die in dice:
-        print(dice_art.get(die)[line], end=" ")
+        print(dice_art.get(die)[row], end=" ")
     print()
 
 
