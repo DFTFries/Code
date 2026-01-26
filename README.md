@@ -4,4 +4,4 @@ Python Coding Journey
 https://youtu.be/ix9cRaBkVe0?t=17777
 
 26.01
-https://youtu.be/ix9cRaBkVe0?t=19728
+https://youtu.be/ix9cRaBkVe0?t=20315
