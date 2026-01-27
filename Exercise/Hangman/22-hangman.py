@@ -1,8 +1,9 @@
 # Hangman in Python
 
+from wordslist import words
 import random
 
-words = ("apple", "orange", "banana", "coconut", "pineapple")
+# words = ("apple", "orange", "banana", "coconut", "pineapple")
 
 # dictionary of key:()
 hangman_art = {0: ("   ",
@@ -21,7 +22,7 @@ hangman_art = {0: ("   ",
                    "/|\\",
                    "   "),
                5: (" o ",
-                   "/|\\"
+                   "/|\\",
                    "/  "),
                6: (" o ",
                    "/|\\",
@@ -36,11 +37,6 @@ def display_man(wrong_guesses):
     print()
     print("******")
 
-def guessed_letters(guess):
-    guessed_letters = []
-    guessed_letters.append(guess)
-    return guessed_letters
-
 def display_hints(hint):
     print(" ".join(hint))
 
@@ -51,36 +47,41 @@ def display_answer(answer):
 def main():
     answer = random.choice(words)
     hint = ["_" for letter in answer]
+    guessed_letters = []
     wrong_guesses = 0
     is_running = True
 
     while is_running:
-        guesses = []
+        
         display_man(wrong_guesses)
         display_hints(hint)
-        if len(guesses) > 0:
-            print(guesses)
-        else:
-            pass
+        print()
+        print("*********")
+        print("Guessed letters: " + ", ".join(guessed_letters))
         guess = input("Enter a letter: ").lower()
-        print(guesses)
-        
 
-        if len(guess) != 1:
+        if len(guess) != 1 or not guess.isalpha():
             print("Invalid input")
             continue
+
+        if guess in guessed_letters:
+            print("**********************************")
+            print(f"You already tried the letter {guess}")
+            print("**********************************")
+            continue
+
+        guessed_letters.append(guess)
 
         if guess in answer:
             for i in range(len(answer)):
                 if answer[i] == guess:
                     hint[i] = guess
-
         else:
-            print(f"Wrong guesses: {wrong_guesses}")
             wrong_guesses += 1
+            print(f"Wrong guesses: {wrong_guesses}")
 
 
-        if wrong_guesses == 6:
+        if wrong_guesses >= 6:
             display_man(wrong_guesses)
             print("You have lost")
             print(f"The word was {answer}")
@@ -90,7 +91,7 @@ def main():
             else:
                 break
         
-        if not "_" in hint:
+        if "_" not in hint:
             print(f"You won. The word was {answer}")
             print(f"You made {wrong_guesses} mistakes")
             display_man(wrong_guesses)
@@ -99,7 +100,7 @@ def main():
                 main()
             else:
                 break
-        
+    guessed_letters.clear()
     
 if __name__ == '__main__':
     main()
