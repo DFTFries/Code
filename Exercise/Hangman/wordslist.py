@@ -20,3 +20,5 @@ words = (
     "schule", "lehrer", "schueler", "heft", "buch", "stift",
     "pause", "tafel", "klasse", "pruefung"
 )
+
+# print(len(words))
