@@ -8,6 +8,9 @@ In Progress:
 
 To do:
 
+    SQL Tutorial for Beginners (and Technical Interview Questions Solved)
+    https://www.youtube.com/watch?v=-fW2X7fh7Yg
+
     Harvard CS50’s Introduction to Programming with Python – Full University Course
     https://www.youtube.com/watch?v=nLRL_NcnK-4
 
