@@ -16,7 +16,7 @@ capitals = {"USA": "Washington D.C.",
 #     print("That capital doesn't exist")
 # capitals.update({"Germany": "Berlin"})
 # capitals.pop("China")
-# capitals.popitem()   removes tha latest key:value pair that was inserted
+# capitals.popitem()   removes the latest key:value pair that was inserted
 # capitals.clear()
 
 # keys = capitals.keys()         use .keys() to get the keys
