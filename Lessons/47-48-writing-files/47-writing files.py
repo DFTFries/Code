@@ -5,7 +5,7 @@ import csv
 
 
 txt_data = "I like pizza!"
-employees_txt = ["Eugene", "Squidward", "Spongebob", "Patrick"]
+employees_txt = ["Eugene", "Squidward", "Spongebob", "Patrick", "Larry"]
 
 employees_json = {
     "name": "Spongebob",
@@ -18,10 +18,10 @@ employees_csv = [["Name", "Age", "Job"],
                  ["Patrick", 37, "Unemployed"],
                  ["Sandy", 27, "Scientist"]]
 
-
-txt_path = "Lessons\\47-writing-files\\output.txt"
-json_path = "Lessons\\47-writing-files\\output.json"
-csv_path = "Lessons\\47-writing-files\\output.csv"
+dir = "Lessons\\47-48-writing-files\\"
+txt_path = dir + "output.txt"
+json_path = dir + "output.json"
+csv_path = dir + "output.csv"
 
 
 # Modes:
@@ -48,3 +48,4 @@ try:
 
 except FileExistsError:
     print("File already exists.")
+
