@@ -3,7 +3,7 @@ Python Coding Journey
 In Progress:
 
     Python Full Course Video Timestamp
-    https://youtu.be/ix9cRaBkVe0?t=29254
+    https://youtu.be/ix9cRaBkVe0?t=30985
 
 
 To do:
