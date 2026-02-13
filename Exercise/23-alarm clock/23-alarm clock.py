@@ -1,12 +1,13 @@
 # Python Alarm Clock
 
+
 import time
 import datetime
 import pygame
 
 def set_alarm(alarm_time):
     print(f"Alarm set for {alarm_time}")
-    sound_file = "Exercise/23-alarm clock/Dua_Lipa-Physical__Remixes_-LODATO__Remix__Extended-72436644.mp3"
+    sound_file = "Exercise/23-alarm clock/Dua_Lipa-Physical__Remixes_-LODATO__Remix__Extended-72436644.mp3"     #sound_file is on .gitignore - zipdj tracks are not meant for sharing
     is_running = True
 
     while is_running:
