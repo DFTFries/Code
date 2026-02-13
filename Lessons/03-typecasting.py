@@ -1,7 +1,7 @@
 #  Typecasting = the process of converting a variable from one data type to another
 #                str(), int(), float(), bool()
 
-name = "Jan Neumann"
+name = "Jan N"
 age = 34
 gpa = 3.2
 is_student = True

@@ -4,6 +4,6 @@
             "path": "Lessons/46-file-detection",
             "envManager": "ms-python.python:venv",
             "packageManager": "ms-python.python:pip"
-        },
+        }
     ]
 }
