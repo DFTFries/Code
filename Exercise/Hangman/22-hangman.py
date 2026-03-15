@@ -45,7 +45,7 @@ def display_answer(answer):
     print(" ".join(answer))
 
 def main():
-    answer = random.choice(words)
+    answer = random.choice(words).lower()
     hint = ["_" for letter in answer]
     guessed_letters = []
     wrong_guesses = 0
